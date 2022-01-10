@@ -7,7 +7,7 @@
 
 .mlkln-album-card {
     width: 20em;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
     background: var(--background-color-4);
     height: 100%;
@@ -51,7 +51,6 @@
     overflow: hidden;
     border-radius: 5px;
     position: relative;
-    margin: -15px;
 }
 
 .mlkln-album-card figure img {
@@ -60,6 +59,8 @@
     width: 100%;
     height: auto;
     transition: 0.5s;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .mlkln-album-card figure::before {
@@ -74,9 +75,14 @@
     z-index: 1;
 }
 
+.mlkln-album-card-content {
+    padding: 2rem;
+}
+
 .mlkln-album-card .mlkln-album-card-title a {
     display: block;
     margin-top: 10px;
+    margin-bottom: 1rem;
     font-weight: 500;
     font-size: 18px;
     transition: 0.4s;
@@ -92,4 +98,22 @@
 
 .mlkln-album-card:hover figure img {
     transform: scale(1.1);
+}
+
+.mlkln-album-card-price-and-amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mlkln-album-card footer {
+    padding: 2rem;
+}
+
+.mlkln-album-card-owned-list a {
+    margin-right: 2.5rem;
+}
+
+.mlkln-album-card-owned-howmany {
+    font-size: 4rem;
+    margin-right: 1.5rem;
 }
